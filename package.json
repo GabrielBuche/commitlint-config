@@ -1,0 +1,25 @@
+{
+  "name": "commitlint-config",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "gabriel buche <bielbuche@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "commit":"git-cz"
+  },
+
+  "dependencies": {
+    "@commitlint/cli": "^17.7.2",
+    "@commitlint/config-conventional": "^17.7.0"
+  },
+  "devDependencies": {
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^8.0.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
